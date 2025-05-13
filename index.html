@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selamat Datang Di Preview Pengembangan</title>
-    <link rel="stylesheet" href="./dist/output.css">
-</head>
-<body class="bg-orange-100">
-    <div class="container mx-auto h-[100svh] bg-orange-100 flex flex-col justify-center items-center">
-        <h3 class="font-semibold text-[26px] mb-16">Preview Pengembangan</h3>
-        <h1 class="font-extrabold text-[65px] flex flex-col justify-center items-center"><img src="assets/logodapurkait-removebg-preview.png" class="w-[120px] h-[100px]" alt="">DapurKait.</h1>
+    <link rel="icon" type="image/png" sizes="16x16"  href="assets/logo/favicon-16x16.png">
 
-        <div class="flex justify-center items-center gap-5">
-            <div class="w-[300px] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
-                <div class="bg-red-500 h-1.5 rounded-full dark:bg-blue-500" style="width: 10%"></div>
-            </div>
-            <span class="font-medium text-[20px] mb-5">5%</span>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body class="">
+    <script src="dist/main.js"></script>
+   <!--Navigasi bar-->
+   <div class="w-full h-[80px] fixed bg-support backdrop-blur-sm shadow-md  flex z-40">
+    <nav class="container mx-auto h-[80px] bg-transparent flex items-center justify-between px-5">
+        <div class="flex items-center gap-3">
+            <img src="./assets/logo/logodapurkait-removebg-preview.png" class="w-11 h-9 brightness-100" loading="lazy" alt="Logo DapurKait">
+            <h1 class="text-white dark: font-merriweather font-black text-[26px]">DapurKait.</h1>
+        </div>
+        <div class="flex items-center hidden lg:block">
+            <a href="" class="font-raleway font-semibold text-white hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
+            <a href="" class="font-raleway font-semibold text-white hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Menu</a>
+            <a href="" class="font-raleway font-semibold text-white hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Galeri</a>
+            <a href="" class=" h-1 w-1 bg-white"></a>
+            
+            <a class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark: text-[20px transition-all duration-200" href="">Kontak</a>
         </div>
         
-
-        <p class="font-medium text-center text-[16px]">Berikut ini website progres pengembangan website, anda bisa melihat progres kami disini</p>
-        <span class="flex justify-center items-center font-bold text-[16px]">Porwered By 
-            <img src="assets/WhatsApp_Image_2025-01-05_at_14.13.04-removebg-preview.png" class="size-[50px]" alt="">GENZITEID
-            </span>
-    </div>
+        <button id="hamburger" onclick="toggleburger()" class="block lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
+            <span class="block h-0.5 w-6 dark: bg-white transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+            <span class="block h-0.5 w-6 dark: bg-white transition-opacity duration-300 group-[.open]:opacity-0"></span>
+            <span class="block h-0.5 w-6 dark: bg-white transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+        </button>
+        
+        
+    </nav> 
+        <div id="sidebar" class="fixed z-40 top-0 left-0 h-[100vh] w-72 bg-support backdrop-blur-lg dark:backdrop-blur-lg dark:bg-primaryBlue transform -translate-x-full lg:-translate-x-full transition-transform duration-500 mt-[80px] flex flex-col p-5 ">
+            <a href="#" class="font-raleway font-semibold text-white hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
+            <a href="#" class="font-raleway font-semibold text-white hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Menu</a>
+            <a href="#" class="font-raleway font-semibold text-white hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Galeri</a>
+            
+            <a href="#" class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px]">Kontak</a>      
+        </div>
+</div>
 </body>
 </html>
