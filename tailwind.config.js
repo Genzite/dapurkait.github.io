@@ -16,6 +16,15 @@ module.exports = {
         support : '#F3C623',
         support2 : '#FFE9C8',
       },
+      keyframes: {
+        scroll: {
+          '0%'  :{ transform : 'translateX(0%)'},
+          '100%': { transform : 'translateX(-50%)'},
+        },
+      },
+      animation: {
+          scroll : 'scroll 10s linear infinite',
+      },
     },
   },
   plugins: [],
