@@ -13,3 +13,12 @@ window.onload = () => {
       duration: 2000,  // durasi animasi   
     });
   };
+
+function openPreview(src) {
+    document.getElementById('previewImage').src = src;
+    document.getElementById('imagePreview').classList.remove('hidden');
+  }
+
+function closePreview() {
+    document.getElementById('imagePreview').classList.add('hidden');
+  }

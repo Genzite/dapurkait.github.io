@@ -11,25 +11,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    
 </head>
-<body class="">
+<body class="overflow-x-hidden">
     <script src="dist/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <!--Navigasi bar-->
    <div class="w-full h-[80px] fixed bg-second backdrop-blur-sm shadow-md flex z-40">
-    <nav class="container mx-auto h-[80px] bg-transparent flex items-center justify-between px-5" data-aos="fade-top">
+    <nav class="container mx-auto h-[80px] bg-transparent flex items-center justify-between px-5">
         <div class="flex items-center gap-3">
-            <img src="./assets/logo/logodapurkait-.png" class="w-11 h-9 brightness-100" loading="lazy" alt="Logo DapurKait">
-            <h1 class="text-amber-800 dark: font-merriweather font-black text-[26px]">DapurKait.</h1>
+            <img loading="lazy" src="./assets/logo/logodapurkait-.png" class="w-11 h-9 brightness-100" loading="lazy" alt="Logo DapurKait">
+            <h1 class="text-amber-800 dark: font-merriweather font-black text-[26px] cursor-pointer"><a href="#">DapurKait.</a></h1>
         </div>
         <div class="flex items-center hidden lg:block">
-            <a href="" class="font-raleway font-semibold text-amber-800 hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
-            <a href="" class="font-raleway font-semibold text-amber-800 hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Menu</a>
-            <a href="" class="font-raleway font-semibold text-amber-800 hover:text-supportBlue dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Galeri</a>
-            <a href="" class=" h-1 w-1 bg-white"></a>
+            <a href="" class="font-raleway font-semibold text-amber-800 hover:text-white dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-white hover:border-b-4 transition-all duration-100">Beranda</a>
+            <a href="" class="font-raleway font-semibold text-amber-800 hover:text-white dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-white hover:border-b-4 transition-all duration-100">Menu</a>
+            <a href="" class="font-raleway font-semibold text-amber-800 hover:text-white dark:hover:text-supportPink dark: text-[20px] p-5 hover:border-white hover:border-b-4 transition-all duration-100">Galeri</a>
+            <a class="text-white px-5 text-center text-[20px]">|</a>
             
-            <a class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-amber-900 dark: text-[20px] transition-all duration-200" href="">Kontak</a>
+            <a class="font-raleway font-semibold py-2 px-4 bg-white hover:bg-support2  rounded-md text-amber-900 hover:text-amber-700 dark:text-[20px] transition-all duration-200" href="">Kontak</a>
         </div>
         
         <button id="hamburger" onclick="toggleHamburger()" class="block lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
@@ -51,24 +53,24 @@
 
 <!-- Halaman Beranda -->
  <div class="w-full h-[1000px] md:h-[100svh] bg-white">
-    <div class="container mx-auto h-full md:h-[100svh] bg-white flex flex-col md:flex-row items-center pt-20 px-1 md:px-5 lg:px-10 gap-10 md:gap-2">
-        <div class="flex flex-col w-full md:w-[50%] gap-[5px] xl:gap-[20px] mt-10">
+    <div class="container mx-auto h-full md:h-[100svh] bg-white flex flex-col md:flex-row items-center pt-20 px-2 md:px-5 lg:px-10 gap-10 md:gap-2">
+        <div class="flex flex-col w-full md:w-[50%] gap-[5px] xl:gap-[20px] mt-20 md:mt-5">
             <p data-aos="fade-up" class="font-lato font-extrabold text-[26px] lg:text-[40px] xl:text-[42px] max-w-[300px] md:max-w-[400px] lg:max-w-[450px] leading-8 lg:leading-10">Bantu <span class="text-second">Acara</span> Anda, Sajikan Rasa <span class="text-second">Terbaik</span>.</p>
             <span data-aos="fade-up" class="font-lato font-bold text-[16px] lg:text-[20px] xl:text-[26px]">Dengan</span> 
             <h1 data-aos="fade-up" class="font-merriweather font-black text-[42px] md:text-[65px] xl:text-[65px] text-second italic flex z-10" data-aos="fade-up" data-aos-duration="3000">DapurKait.</h1>
             <p class="font-lato font-semibold text-[16px] xl:text-[20px] bg-white z-20">Telah dipercaya oleh <span class="text-second">puluhan pelanggan</span>, baik masyarakat dan instansi pendidikan dalam mengurus acara cetering.</p>
 
             <button class="flex gap-2 cursor-none mt-[50px]" data-aos="none">
-                <a href="#" class="bg-second hover:bg-support py-2 xl:py-4 px-5 md:px-9 xl:px-14 flex items-center justify-center font-lato font-semibold text-[20px] text-amber-950 rounded-[28px] shadow-lg hover:shadow-primary duration-200">Mulai</a>
-                <a href="#8383" class="border-2 border-second hover:bg-second py-2 xl:py-4 px-5 md:px-9 xl:px-11 flex items-center justify-center font-lato font-semibold text-[20px] text-amber-950 rounded-[28px] shadow-lg hover:shadow-primary duration-200">Hubungi Sekarang</a>
+                <a href="#" class="bg-second hover:bg-support py-2 xl:py-4 px-7 md:px-9 xl:px-14 flex items-center justify-center font-lato font-semibold text-[20px] text-amber-950 rounded-[28px] shadow-lg hover:shadow-primary duration-200">Mulai</a>
+                <a href="#8383" class="border-2 border-second hover:bg-second py-2 xl:py-4 px-5 md:px-3 xl:px-11 flex items-center justify-center font-lato font-semibold text-[20px] text-amber-950 rounded-[28px] shadow-lg hover:shadow-primary duration-200">Hubungi Sekarang</a>
             </button>
         </div>
         <div class="w-full md:w-[50%]">
             <div class="grid grid-cols-2 gap-2 p-1 lg:p-5" data-aos="fade-left" data-aos-duration="2000">
-                <img src="assets/images/IMG20250117044209 - Kamal PT kait jaya abadi.jpg" class="h-[200px] xl:h-[250px] w-full object-cover rounded-[18px]" alt="" loading="lazy">
-                <img src="assets/images/1730858585944 - Kamal PT kait jaya abadi.jpg" class="h-[200px] xl:h-[250px] w-full object-cover rounded-[18px]" alt="" loading="lazy">
-                <img src="assets/images/1730870883601 - Kamal PT kait jaya abadi.jpg" class="h-[200px] xl:h-[250px] w-full object-cover rounded-[18px]" alt="" loading="lazy">
-                <img src="assets/images/IMG20250509081704 - Kamal PT kait jaya abadi.jpg" class="h-[200px] xl:h-[250px] w-full object-cover rounded-[18px]" alt="" loading="lazy">
+                <img loading="lazy" src="assets/images/IMG20250117044209 - Kamal PT kait jaya abadi.jpg" class="h-[200px] xl:h-[250px] w-full object-cover rounded-[18px]" alt="" loading="lazy">
+                <img loading="lazy" src="assets/images/1730858585944 - Kamal PT kait jaya abadi.jpg" class="h-[200px] xl:h-[250px] w-full object-cover rounded-[18px]" alt="" loading="lazy">
+                <img loading="lazy" src="assets/images/1730870883601 - Kamal PT kait jaya abadi.jpg" class="h-[200px] xl:h-[250px] w-full object-cover rounded-[18px]" alt="" loading="lazy">
+                <img loading="lazy" src="assets/images/IMG20250509081704 - Kamal PT kait jaya abadi.jpg" class="h-[200px] xl:h-[250px] w-full object-cover rounded-[18px]" alt="" loading="lazy">
                 </div>
         </div>
     </div>
@@ -87,27 +89,27 @@
                 <div class="flex animate-scroll gap-5 min-w-max">
                   <!-- 1x Logo Set -->
                   <template id="logo-set">
-                    <img class="size-[100px] mx-2" src="assets/logo/Universitas_Terbuka_Logo_PNG_Vector__CDR__Free_Download.png" alt="">
-                    <img class="size-[100px] mx-2" src="assets/logo/imagesAbipraya.png" alt="">
-                    <img class="size-[100px] mx-2" src="assets/logo/imagesSeamolec.png" alt="">
-                    <img class="w-[150px] h-[100px] mx-2" src="assets/logo/mandiri.png" alt="">
-                    <img class="size-[100px] mx-2" src="assets/logo/als.png" alt="">
+                    <img loading="lazy" class="size-[100px] mx-2" src="assets/logo/Universitas_Terbuka_Logo_PNG_Vector__CDR__Free_Download.png" alt="">
+                    <img loading="lazy" class="size-[100px] mx-2" src="assets/logo/imagesAbipraya.png" alt="">
+                    <img loading="lazy" class="size-[100px] mx-2" src="assets/logo/imagesSeamolec.png" alt="">
+                    <img loading="lazy" class="w-[150px] h-[100px] mx-2" src="assets/logo/mandiri.png" alt="">
+                    <img loading="lazy" class="size-[100px] mx-2" src="assets/logo/als.png" alt="">
                   </template>
               
                   <!-- Duplikat isi 2x -->
                   <div class="flex gap-5">
                     <!-- Set 1 -->
-                    <img class="size-[80px] mx-2" src="assets/logo/Universitas_Terbuka_Logo_PNG_Vector__CDR__Free_Download.png" alt="">
-                    <img class="size-[80px] mx-2" src="assets/logo/imagesAbipraya.png" alt="">
-                    <img class="size-[80px] mx-2" src="assets/logo/imagesSeamolec.png" alt="">
-                    <img class="w-[150px] h-[80px] mx-2" src="assets/logo/mandiri.png" alt="">
-                    <img class="size-[80px] mx-2" src="assets/logo/als.png" alt="">
+                    <img loading="lazy" class="size-[80px] mx-2" src="assets/logo/Universitas_Terbuka_Logo_PNG_Vector__CDR__Free_Download.png" alt="">
+                    <img loading="lazy" class="size-[80px] mx-2" src="assets/logo/imagesAbipraya.png" alt="">
+                    <img loading="lazy" class="size-[80px] mx-2" src="assets/logo/imagesSeamolec.png" alt="">
+                    <img loading="lazy" class="w-[150px] h-[80px] mx-2" src="assets/logo/mandiri.png" alt="">
+                    <img loading="lazy" class="size-[80px] mx-2" src="assets/logo/als.png" alt="">
                     <!-- Set 2 (duplikat) -->
-                    <img class="size-[80px] mx-2" src="assets/logo/Universitas_Terbuka_Logo_PNG_Vector__CDR__Free_Download.png" alt="">
-                    <img class="size-[80px] mx-2" src="assets/logo/imagesAbipraya.png" alt="">
-                    <img class="size-[80px] mx-2" src="assets/logo/imagesSeamolec.png" alt="">
-                    <img class="w-[150px] h-[80px] mx-2" src="assets/logo/mandiri.png" alt="">
-                    <img class="size-[80px] mx-2" src="assets/logo/als.png" alt="">
+                    <img loading="lazy" class="size-[80px] mx-2" src="assets/logo/Universitas_Terbuka_Logo_PNG_Vector__CDR__Free_Download.png" alt="">
+                    <img loading="lazy" class="size-[80px] mx-2" src="assets/logo/imagesAbipraya.png" alt="">
+                    <img loading="lazy" class="size-[80px] mx-2" src="assets/logo/imagesSeamolec.png" alt="">
+                    <img loading="lazy" class="w-[150px] h-[80px] mx-2" src="assets/logo/mandiri.png" alt="">
+                    <img loading="lazy" class="size-[80px] mx-2" src="assets/logo/als.png" alt="">
                   </div>
                 </div>
               </div>
@@ -115,57 +117,57 @@
     </div>
 
     <!--Menu page -->
-    <div class="w-full h-[100svh]">
-        <div class="container mx-auto h-auto bg-transparent px-1 md:px-5 py-16">
+    <div class="w-full h-[100svh] mb-20">
+        <div class="container mx-auto h-auto bg-transparent px-2 md:px-5 py-16">
             <h1 class="font-extrabold font-lato text-[40px] text-primary" data-aos="fade-right" data-aos-duration="1200">Best Seller</h1>
             <p class="font-extrabold font-lato text-[16px] text-amber-800 -mt-2" data-aos="fade-right" data-aos-duration="1200">Menu Yang Sering DIpesan Pelanggan</p>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 gap-y-3 mt-5">
                 <div data-aos="fade-up" class="w-full md:w-full h-1330px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image_sate_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image_sate_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Sate Ayam</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,9</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,9</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Daging ayam tusuk bakar bumbu kacang lezat.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/ayamGeprek_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/ayamGeprek_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Ayam Geprek</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,9</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,9</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Ayam goreng tepung pedas digilas sambal nikmat.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image1_Chicken_Steak.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image1_Chicken_Steak.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Chicken Steak</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,9</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,9</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Potongan ayam panggang saus lezat ala barat.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image2_sopayam.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image2_sopayam.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Sop Ayam</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,9</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,9</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Sup ayam hangat berkaldu kaya rempah segar.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image2_nasikebuli_daputkait.jpg" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image2_nasikebuli_daputkait.jpg" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Nasi Kebuli</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,9</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,9</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Nasi gurih rempah khas timur tengah lezat.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image3_Mandi_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image3_Mandi_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Nasi Mandi</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,9</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,9</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Nasi berbumbu rempah khas Timur Tengah lezat.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image3_dimsum_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image3_dimsum_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">DImsum</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,9</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,9</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Camilan kukus lembut isi daging gurih.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
@@ -175,88 +177,361 @@
 
             <h1 class="font-extrabold font-lato text-[40px] text-primary mt-10" data-aos="fade-right" data-aos-duration="1200">Menu Lainnya</h1>
             <p class="font-extrabold font-lato text-[16px] text-amber-800 -mt-2" data-aos="fade-right" data-aos-duration="1200">Kami Juga Punya Menu Lainnya</p>
+            
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 gap-y-3 mt-5">
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image4_AyamAsamManis_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image4_AyamAsamManis_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Ayam Asam Manis</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Ayam goreng tepung siram saus asam manis.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image4_AyamKremes_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image4_AyamKremes_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Ayam Kremes</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Ayam goreng renyah tabur kremesan gurih kriuk.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image5_AyamBakar_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image5_AyamBakar_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Ayam Bakar</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Ayam berbumbu rempah dibakar hingga matang sempurna.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image5_chickenKatsu_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image5_chickenKatsu_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Chicken Katsu</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Ayam fillet tepung roti goreng saus katsu.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image6_GurameGorenng_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image6_GurameGorenng_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Gurame Goreng</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Ikan gurame utuh goreng garing berbumbu ringan.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image6_Lele Kremes_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image6_Lele Kremes_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Lele Kremes</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Lele goreng garing disajikan dengan kremesan gurih.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image7-GurameAsamManis_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image7-GurameAsamManis_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Gurame Asam Manis</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Gurame goreng siram saus asam manis segar.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image7_GurameBakar_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image7_GurameBakar_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Gurame Bakar</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Ikan gurame dibakar dengan olesan bumbu kecap.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image7_BeefSteak_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image7_BeefSteak_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">BeefSteak</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Daging sapi panggang saus lada hitam pekat.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image7_sopIgadapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image7_sopIgadapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Sop Iga</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Iga sapi rebus kuah bening sayuran segar.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
                 <div data-aos="fade-up" class="w-full md:w-full h-[330px] md:h-[310px] bg-white shadow-[0px_5px_9px_rgba(0,0,0,0.2)] hover:shadow-primary rounded-[12px] relative hover:border-primary">
-                    <img class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image8_igaBakar_dapurkait.webp" loading="lazy" alt="">
+                    <img loading="lazy" class="rounded-t-[12px] w-full h-[135px] object-cover" src="assets/images/image8_igaBakar_dapurkait.webp" loading="lazy" alt="">
                     <h1 class="font-lato font-bold text-[20px] px-2 pt-1">Iga Bakar</h1>
-                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img src="assets/logo/star.svg" alt="">4,5</span>
+                    <span class="flex gap-1 font-lato font-bold text-[16px] px-2 -mt-1"><img loading="lazy" src="assets/logo/star.svg" alt="">4,5</span>
                     <p class="font-lato font-medium text-[16px] px-2 py-2">Iga sapi dibakar balur bumbu manis pedas.</p>
                     <a class="px-3 py-1 bg-second rounded-md absolute bottom-0 right-0 m-2 font-lato font-medium hover:bg-support2" href="#">Pesan</a>
                 </div>
             </div>
+            
+            
+            <h1 class="font-extrabold font-lato text-[40px] text-primary mt-10" data-aos="fade-right" data-aos-duration="1200">Menu Paket Sepekan</h1>
 
+            <h3 class="font-extrabold font-lato text-[26px] mt-5" data-aos="fade-right" data-aos-duration="1200">Harga <span class="text-primary">Rp20.000/pack :</span></h3>
+            <div class="w-full h-auto">
+                <div class="overflow-x-auto whitespace-nowrap bg-white h-auto px-1 py-2" data-aos="fade-up" data-aos-duration="2100">
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] border-2 rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Senin</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Telur Bumbu Bali</li>
+                        <li>Tumis Buncis Bakso</li>
+                        <li>Kerupuk</li>
+                        <li>Sambal</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                        <h3 class="font-lato font-extrabold text-[40px]">Selasa</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Ayam Goreng Serundeng</li>
+                        <li>Tumis Toge</li>
+                        <li>Kerupuk</li>
+                        <li>Sambal</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Rabu</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Ikan Kembung Rica</li>
+                        <li>Tumis Kacang Panjang</li>
+                        <li>Kerupuk</li>
+                        <li>Sambal</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Kamis</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Sapi Cabe Ijo</li>
+                        <li>Acar kuning</li>
+                        <li>Kerupuk</li>
+                        <li>Sambal</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Jum'at</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Chicken Teriyaki</li>
+                        <li>Capcay Seafood</li>
+                        <li>Kerupuk</li>
+                        <li>Sambal</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Sabtu</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Lele Goreng</li>
+                        <li>Tumis Tahu Cabe Ijo</li>
+                        <li>Kerupuk</li>
+                        <li>Sambal</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                </div>      
+            </div>
+            
+            <!-- Menu Sepekan 25.000/pack -->
+            <h3 class="font-extrabold font-lato text-[26px] mt-5" data-aos="fade-right" data-aos-duration="1200">Harga <span class="text-primary">Rp25.000/pack :</span></h3>
+            <div class="w-full h-auto">
+                <div class="overflow-x-auto whitespace-nowrap bg-white h-auto px-1 py-2" data-aos="fade-up" data-aos-duration="2100">
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] border-2 rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Senin</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Rendang Daging Sapi</li>
+                        <li>Gulai Nangka</li>
+                        <li>Perkedel Kentang</li>
+                        <li>Kerupuk</li>
+                        <li>Sambal</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Selasa</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Ayam Asam Manis</li>
+                        <li>Capcay Bakso</li>
+                        <li>Bakwan Jagung</li>
+                        <li>Sambal</li>
+                        <li>Kerupuk</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Rabu</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Tumis Cumi Cabe Ijo</li>
+                        <li>Mendoan</li>
+                        <li>Ayam Goreng</li>
+                        <li>Sambal</li>
+                        <li>Kerupuk</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                        <h3 class="font-lato font-extrabold text-[40px]">Kamis</h3>
+                        <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                            <li>Nasi</li>
+                            <li>Balado Ikan Tongkol</li>
+                            <li>Tumis Tempe Cabe Ijo</li>
+                            <li>Cah Rawit</li>
+                            <li>Sambal</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Jum'at</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi Kuning</li>
+                        <li>Balado Telur</li>
+                        <li>Orek Tempe</li>
+                        <li>Ayam Serundeng</li>
+                        <li>Sambal</li>
+                        <li>Kerupuk</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                    <span class="relative inline-block mr-1 w-[300px] min-h-[360px] rounded-md px-2 py-3 shadow-[0px_5px_9px_rgba(0,0,0,0.2)] align-top border-2 border-second bg-support2">
+                    <h3 class="font-lato font-extrabold text-[40px]">Sabtu</h3>
+                    <ul class="font-lato font-medium text-[20px] lg:text-[26px] whitespace-normal break-words list-decimal ml-7">
+                        <li>Nasi</li>
+                        <li>Empal</li>
+                        <li>Tempe Bacem</li>
+                        <li>Urap</li>
+                        <li>Kerupuk</li>
+                        <li>Sambal</li>
+                    </ul>
+                    <div class="absolute right-0 bottom-0 flex items-center gap-2 px-4 py-3">
+                        <a class="font-lato font-semibold text-[20px] underline hover:text-primary duration-300" href="#">Pesan</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                    </span>
+                </div>      
+            </div>
+        </div>
 
+        <div class="w-full h-auto bg-white flex items-center justify-center">
+            <div class="container mx-auto h-auto md:h-auto bg-white py-14 px-2 md:px-5 ">
+                <h1 class="font-lato font-extrabold text-[40px] text-primary flex justify-center" data-aos="fade-up">Galeri Kami</h1>
+                <p class="font-lato font-extrabold text-[20px] text-amber-800 flex justify-center -mt-2 pb-10" data-aos="fade-up">Dokumentasi Layanan Kami</p>
+                <div class="grid-cols-2 grid-rows-4 // grid md:grid-cols-4 md:grid-rows-2 w-full h-full gap-[5px]">
+                    <span class="col-span-2 row-span-2 relative rounded-[12px] cursor-pointer" onclick="openPreview('assets/images/armada_dapurkait.webp')" data-aos="fade-right">
+                        <img loading="lazy" class="bg-slate-700 w-full h-full rounded-[12px]" src="assets/images/armada_dapurkait.webp" alt="">
+                        <div class="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full h-[120px] flex items-end justify-start rounded-[12px]">
+                            <h3 class="font-lato font-bold text-white text-[20px] lg:text-[26px] py-3 px-2">Armada Pengiriman DapurKait</h3>
+                        </div>
+                    </span>
+                    
+                    <span class="relative rounded-[12px] cursor-pointer" onclick="openPreview('assets/images/imageLampiran_makanan1_dapurkait.webp')" data-aos="fade-left">
+                        <img loading="lazy" class="bg-slate-700 w-full h-full object-cover rounded-[12px]" src="assets/images/imageLampiran_makanan1_dapurkait.webp" alt="">
+                        <div class="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full h-[120px] flex items-end justify-center rounded-[12px]">
+                            <h3 class="font-lato font-bold text-white text-[16px] lg:text-[20px] py-3 px-2">Dokumentasi Catering Nasi Kuning</h3>
+                        </div>
+                    </span>
+                    <span class="relative rounded-[12px] cursor-pointer" onclick="openPreview('assets/images/imagelampiran_dapur2_dapurkait.webp')" data-aos="fade-left">
+                        <img loading="lazy" class="bg-slate-700 w-full h-full object-cover rounded-[12px]" src="assets/images/imagelampiran_dapur2_dapurkait.webp" alt="">
+                        <div class="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full h-[120px] flex items-end justify-start rounded-[12px]">
+                            <h3 class="font-lato font-bold text-white text-[16px] lg:text-[20px] py-3 px-2">Kondisi Ruangan DapurKait</h3>
+                        </div>
+                        
+                    </span>
+                    <span class="relative rounded-[12px] cursor-pointer" onclick="openPreview('assets/images/imageLampiran_dapur3_dapurkait.webp')" data-aos="fade-left">
+                        <img loading="lazy" class="bg-slate-700 w-full h-full object-cover rounded-[12px]" src="assets/images/imageLampiran_dapur3_dapurkait.webp" alt="">
+                        <div class="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full h-[120px] flex items-end justify-start rounded-[12px]">
+                            <h3 class="font-lato font-bold text-white text-[16px] lg:text-[20px] py-3 px-2">Kondisi Ruangan DapurKait</h3>
+                        </div>
+                        
+                    </span>
+                    <span class="relative rounded-[12px] cursor-pointer" onclick="openPreview('assets/images/IMG20250117044209 - Kamal PT kait jaya abadi.jpg')" data-aos="fade-left">
+                        <img loading="lazy" class="bg-slate-700 w-full h-full object-cover rounded-[12px]" rounded-[12px] src="assets/images/IMG20250117044209 - Kamal PT kait jaya abadi.jpg" alt="">
+                        <div class="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full h-[120px] flex items-end justify-start rounded-[12px]">
+                            <h3 class="font-lato font-bold text-white text-[16px] lg:text-[20px] py-3 px-2">Dokumentasi Catering Ayam Kremes</h3>
+                        </div>
+
+                    </span>
+                <!-- Popup Preview -->
+                <div id="imagePreview" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+                    <div class="relative">
+                    <button onclick="closePreview()" class="absolute top-[-40px] right-[-10px] text-white text-3xl font-bold">&times;</button>
+                    <img loading="lazy" id="previewImage" src="" class="max-w-[90vw] max-h-[90vh] rounded-xl shadow-lg" alt="Preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w-full h-auto bg-second">
+        <div class="container mx-auto h-auto md:h-[400px] f bg-transparent px-2 md:px-5 py-14">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                <div class="col-span-1 md:col-span-2"> 
+                    <img loading="lazy" src="assets/logo/logodapurkait-.png" class="w-[130px] h-[80px]" loading="lazy" alt="">
+                    <h1 class="font-merriweather font-bold text-[42px] text-amber-900">DapurKait.</h1>
+                    <h3 class="font-lato font-extrabold text-[20px] mt-2">PT KAIT BERKAH JAYA</h3>
+                    <p class="font-lato font-semibold text-[16px] w-[70%] cursor-pointer hover:text-white duration-200"><a href="https://www.google.com/maps/search/Bukit+Sasmita+Loka+No.+26,+RT.+003%2FRW.+012+++++++++++++++++++++Pamulang,+Tangerang+Selatan/@-6.3455593,106.7045837,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D">Bukit Sasmita Loka No. 26, RT. 003/RW. 012
+                    Pamulang, Tangerang Selatan</a></p>
+                    <p class="font-lato font-semibold text-[16px] ">
+                        <a class="cursor-pointer hover:text-white duration-200" href="mailto:ptkait81@gmail.com">ptkait81@gmail.com</a><br>
+                        <a class="cursor-pointer hover:text-white duration-200" href="https://wa.me/6285819636548">0858 1963 6548</a>
+                    </p>
+                </div>
+                <div class="col-span-1 flex flex-col justify-start gap-5">
+                    <h1 class="font-lato font-extrabold text-[26px]">Navigasi</h1>
+                    <a class="font-lato font-semibold text-[20px]" href="#">Beranda</a>
+                    <a class="font-lato font-semibold text-[20px]" href="#">Menu</a>
+                    <a class="font-lato font-semibold text-[20px]" href="#">Galeri</a>
+                </div>
+                <div class="col-span-1 flex flex-col gap-5">
+                    <h1 class="font-lato font-extrabold text-[26px] ">Kontak</h1>
+                    <a class="py-2 px-3 w-[50%] rounded-md bg-white text-green-800 font-lato font-bold text-[20px] text-center" href="">Whatsapp</a>
+                </div>
+            </div>
+
+            <div>
+                <!--<h5>&copy;</h5>-->
+            </div>
         </div>
     </div>
 </body>
 </html>
+                        
