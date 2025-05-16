@@ -1,0 +1,21 @@
+/* Scrollbar untuk browser berbasis WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #FA812F; /* warna oranye */
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* tanpa background */
+  }
+  
+  /* Scrollbar Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #FA812F transparent;
+  }
+  
