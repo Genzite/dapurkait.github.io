@@ -5,6 +5,9 @@ function toggleHamburger(){
     Btn.classList.toggle('open');
     Sidebar.classList.toggle('-translate-x-full');
     Sidebar.classList.toggle('translate-x-0');
+
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', !isExpanded);
 }
 
 window.onload = () => {
