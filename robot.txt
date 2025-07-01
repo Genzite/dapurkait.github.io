@@ -1,6 +1,6 @@
 # robots.txt website DapurKait
 
 User-agent: *
-Disallow:
+Allow: /
 
 Sitemap: https://www.dapurkait.my.id/sitemap.xml
